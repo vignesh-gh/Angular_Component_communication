@@ -1,0 +1,33 @@
+<ng-content></ng-content>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            
+                <div class="form-group">    
+                   <div class="row">
+                       <div class="col-sm-5">
+                        <label for="serverName">ServerName</label>
+                        <input id="serverName" type="text" class="form-control" #serverNameInput> 
+                       </div>  
+                   </div>   
+
+                   <div class="row">
+                    <div class="col-sm-5">
+                     <label for="serverContent">ServerContent</label>
+                     <input id="serverContent" type="text" class="form-control" #serverContentInput> 
+                    </div>
+                </div>      
+                
+                <div class="row">
+                    <div class="col-sm-4">
+                        <button class="btn btn-primary" (click)="addServer(serverNameInput)">Add Server</button>
+                        <button class="btn btn-primary" (click)="addBluePrint(serverNameInput)">Add Server Content</button>
+                    </div>
+                   
+                </div>
+                                            
+                </div>
+            
+        </div>
+    </div>
+</div>
